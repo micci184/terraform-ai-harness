@@ -22,10 +22,20 @@ The standard sample pattern assumes:
 
 Do not treat `examples/` as the default apply target.
 
+## Required Tools
+
+- Terraform
+- TFLint
+- Trivy
+- jq
+
+The Cursor shell hook uses `jq` to parse shell execution payloads.
+
 ## Safety Rules
 
 - Do not use Terraform CLI workspaces.
 - Do not run `terraform destroy`.
 - Do not run `terraform state` commands.
 - Do not run `terraform force-unlock`.
-- Do not use `-target` with `terraform plan` or `terraform apply`.
+- Do not run `terraform workspace` commands.
+- Do not use `-destroy`, `-replace`, `-target`, or `--target` with `terraform plan` or `terraform apply`.

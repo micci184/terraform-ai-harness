@@ -23,6 +23,7 @@ This file is the entry point for AI Agents working in this repository.
 - Do not run `terraform destroy`.
 - Do not run `terraform state` commands.
 - Do not run `terraform force-unlock`.
-- Do not use `-target` with `terraform plan` or `terraform apply`.
+- Do not run `terraform workspace` commands.
+- Do not use `-destroy`, `-replace`, `-target`, or `--target` with `terraform plan` or `terraform apply`.
 - Run `scripts/check.sh` before reporting completion.
 - Use `scripts/plan.sh` when a Terraform plan is needed.

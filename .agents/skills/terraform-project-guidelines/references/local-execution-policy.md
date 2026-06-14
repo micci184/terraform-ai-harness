@@ -13,8 +13,15 @@
 - `terraform destroy`
 - `terraform state *`
 - `terraform force-unlock`
+- `terraform workspace *`
+- `terraform plan -destroy`
+- `terraform apply -destroy`
+- `terraform plan -replace=...`
+- `terraform apply -replace=...`
 - `terraform plan -target=...`
 - `terraform apply -target=...`
+- `terraform plan --target=...`
+- `terraform apply --target=...`
 
 ## Workspace
 
