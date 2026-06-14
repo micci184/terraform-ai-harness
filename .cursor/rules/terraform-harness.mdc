@@ -1,0 +1,30 @@
+# Terraform Harness Rules
+
+This repository defines a Terraform AI Harness.
+
+## General Rules
+
+- Do not use Terraform CLI workspaces.
+- Use directory-based environment separation.
+- Do not run `terraform destroy`.
+- Do not run `terraform state` commands.
+- Do not run `terraform force-unlock`.
+- Do not use `-target` with `terraform plan` or `terraform apply`.
+- Use `scripts/check.sh` before reporting completion.
+- Use `scripts/plan.sh` when reviewing Terraform plan output.
+
+## Module Rules
+
+- Keep modules flat.
+- Do not call project child modules from other project child modules.
+- Root modules must compose child modules.
+- Child modules own component resources.
+- Root modules own connection resources.
+
+## Connection Rules
+
+- Security Group Rules must be placed in `connectivity.tf`.
+- ALB Listener Rules must be placed in `routing.tf`.
+- Same-state values must be connected with module outputs.
+- Cross-state values must use SSM Parameter Store, Secrets Manager, DNS, or provider data sources.
+- Do not use `terraform_remote_state` unless explicitly approved.
