@@ -29,4 +29,5 @@ Read the following references before making Terraform changes:
 - Use module outputs for same-state values.
 - Use SSM Parameter Store, Secrets Manager, DNS, or provider data sources for cross-state values.
 - Do not use `terraform_remote_state` unless explicitly approved.
-- Do not run `terraform destroy`, `terraform state`, `terraform force-unlock`, or `-target`.
+- Do not run `terraform destroy`, `terraform state`, `terraform force-unlock`, or `terraform workspace`.
+- Do not use `-destroy`, `-replace`, `-target`, or `--target` with `terraform plan` or `terraform apply`.
