@@ -2,6 +2,8 @@
 
 State is separated by lifecycle, change frequency, blast radius, and review boundary.
 
+Each State boundary maps to one S3 backend state key. See `backend.md` for backend and state storage rules.
+
 ## Standard States
 
 - `global/edge`

@@ -18,6 +18,13 @@ This file is the entry point for AI Agents working in this repository.
 - Use SSM Parameter Store or provider data sources for values across State boundaries.
 - Do not use `terraform_remote_state` by default.
 
+## Backend and State Storage
+
+- Use the S3 backend for all root modules.
+- Do not use DynamoDB for state locking.
+- Use S3 native locking with `use_lockfile = true` and set `encrypt = true`.
+- Use one state key per State boundary.
+
 ## Command Policy
 
 - Do not run `terraform destroy`.

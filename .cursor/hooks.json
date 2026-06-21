@@ -4,6 +4,7 @@
     "beforeShellExecution": [
       {
         "command": "bash .cursor/hooks/block-dangerous-terraform.sh",
+        "matcher": "terraform",
         "timeout": 5,
         "failClosed": true
       }

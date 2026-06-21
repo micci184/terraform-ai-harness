@@ -22,6 +22,13 @@ The standard sample pattern assumes:
 
 Do not treat `examples/` as the default apply target.
 
+## State Backend
+
+- Use the S3 backend for all root modules.
+- Do not use DynamoDB for state locking.
+- Use S3 native locking with `use_lockfile = true` (Terraform 1.10+).
+- Use one state key per State boundary.
+
 ## Required Tools
 
 - Terraform

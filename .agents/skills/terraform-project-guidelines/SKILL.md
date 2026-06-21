@@ -13,6 +13,7 @@ Read the following references before making Terraform changes:
 - `references/directory-layout.md`
 - `references/module-design.md`
 - `references/state-boundary.md`
+- `references/backend.md`
 - `references/cross-state-values.md`
 - `references/local-execution-policy.md`
 - `references/plan-and-check.md`
@@ -29,5 +30,7 @@ Read the following references before making Terraform changes:
 - Use module outputs for same-state values.
 - Use SSM Parameter Store, Secrets Manager, DNS, or provider data sources for cross-state values.
 - Do not use `terraform_remote_state` unless explicitly approved.
+- Use the S3 backend with `use_lockfile = true` and do not use DynamoDB lock tables.
+- Use one state key per State boundary.
 - Do not run `terraform destroy`, `terraform state`, `terraform force-unlock`, or `terraform workspace`.
 - Do not use `-destroy`, `-replace`, `-target`, or `--target` with `terraform plan` or `terraform apply`.
