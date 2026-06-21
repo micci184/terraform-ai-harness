@@ -34,3 +34,10 @@ This repository defines a Terraform AI Harness.
 - Same-state values must be connected with module outputs.
 - Cross-state values must use SSM Parameter Store, Secrets Manager, DNS, or provider data sources.
 - Do not use `terraform_remote_state` unless explicitly approved.
+
+## Backend Rules
+
+- Use the S3 backend for all root modules.
+- Do not use DynamoDB for state locking.
+- Use S3 native locking with `use_lockfile = true` and set `encrypt = true`.
+- Use one state key per State boundary.
