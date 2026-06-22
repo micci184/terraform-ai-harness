@@ -11,6 +11,8 @@ Run:
 This runs:
 
 - `terraform fmt -check -recursive`
+- `terraform init -backend=false` for Terraform directories
+- `terraform validate` for Terraform directories
 - `tflint`
 - `trivy config`
 
