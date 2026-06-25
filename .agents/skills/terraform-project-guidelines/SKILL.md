@@ -12,6 +12,7 @@ Read the following references before making Terraform changes:
 
 - `references/directory-layout.md`
 - `references/module-design.md`
+- `references/expression-style.md`
 - `references/state-boundary.md`
 - `references/backend.md`
 - `references/cross-state-values.md`
@@ -27,6 +28,9 @@ Read the following references before making Terraform changes:
 - Put connection resources in root modules.
 - Use `connectivity.tf` for Security Group Rules.
 - Use `routing.tf` for ALB Listener Rules.
+- Prefer `for_each` for multiple resources.
+- Use `count` only for optional 0-or-1 resources.
+- Keep conditional expressions simple; move complex conditions into `locals`.
 - Use module outputs for same-state values.
 - Use SSM Parameter Store, Secrets Manager, DNS, or provider data sources for cross-state values.
 - Do not use `terraform_remote_state` unless explicitly approved.

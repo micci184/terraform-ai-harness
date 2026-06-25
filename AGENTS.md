@@ -12,6 +12,13 @@ This file is the entry point for AI Agents working in this repository.
 - Security Group Rules must be placed in `connectivity.tf`.
 - ALB Listener Rules must be placed in `routing.tf`.
 
+## Expression Style
+
+- Prefer `for_each` for multiple resources.
+- Use `count` only for optional 0-or-1 resources.
+- Avoid `count.index` for resource identity.
+- Keep conditional expressions simple and move complex conditions into `locals`.
+
 ## Values and State Boundaries
 
 - Use module outputs for values within the same State.

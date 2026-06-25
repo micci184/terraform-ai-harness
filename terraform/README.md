@@ -26,3 +26,6 @@ Rules:
 - Place connection resources in root modules.
 - Use `connectivity.tf` for Security Group Rules.
 - Use `routing.tf` for ALB Listener Rules.
+- Prefer `for_each` for multiple resources.
+- Use `count` only for optional 0-or-1 resources.
+- Keep conditional expressions simple and move complex conditions into `locals`.

@@ -27,6 +27,13 @@ This repository defines a Terraform AI Harness.
 - Child modules own component resources.
 - Root modules own connection resources.
 
+## Expression Rules
+
+- Prefer `for_each` for multiple resources.
+- Use `count` only for optional 0-or-1 resources.
+- Avoid `count.index` for resource identity.
+- Keep conditional expressions simple and move complex conditions into `locals`.
+
 ## Connection Rules
 
 - Security Group Rules must be placed in `connectivity.tf`.
