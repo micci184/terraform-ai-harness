@@ -13,7 +13,7 @@
 - Enable bucket versioning.
 - Enable server-side encryption (SSE-KMS or SSE-S3).
 - Enable Block Public Access on the bucket.
-- Manage the state bucket through a bootstrap step, not through the root modules that consume it.
+- Manage the state bucket outside the root modules that consume it.
 
 ## State Key Layout
 
