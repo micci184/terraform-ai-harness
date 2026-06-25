@@ -3,6 +3,7 @@
 ## Repository Layout
 
 - `examples/` contains reference examples.
+- `templates/` contains copyable skeletons.
 - `terraform/` contains actual Terraform implementation code.
 - `scripts/` contains local and CI-compatible utility scripts.
 - `.cursor/` contains Cursor rules and hooks.
@@ -31,3 +32,4 @@ terraform/
 - Use directory-based environment separation.
 - Do not use Terraform CLI workspaces.
 - Keep examples separate from real implementation.
+- Keep templates separate from real implementation.

@@ -18,9 +18,11 @@ The standard sample pattern assumes:
 ## Directory Roles
 
 - `examples/` is for reference examples and learning material.
+- `templates/` is for copyable skeletons.
 - `terraform/` is for actual Terraform implementation code.
 
 Do not treat `examples/` as the default apply target.
+Do not treat `templates/` as the default apply target.
 
 ## State Backend
 
