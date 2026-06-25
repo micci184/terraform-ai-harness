@@ -6,6 +6,8 @@ This file is the entry point for AI Agents working in this repository.
 
 - Do not use Terraform CLI workspaces.
 - Do not call project child modules from other project child modules.
+- Use `templates/terraform-root-module/` when creating a new root module.
+- Use `templates/terraform-child-module/` when creating a new project child module.
 - Root modules must call child modules flatly.
 - Component resources must be placed in child modules.
 - Component-to-component connections must be placed in root modules.

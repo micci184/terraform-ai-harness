@@ -24,6 +24,8 @@ Read the following references before making Terraform changes:
 - Do not use Terraform CLI workspaces.
 - Keep child modules flat.
 - Do not nest project child modules.
+- Use `templates/terraform-root-module/` when creating a new root module.
+- Use `templates/terraform-child-module/` when creating a new project child module.
 - Put component resources in child modules.
 - Put connection resources in root modules.
 - Use `connectivity.tf` for Security Group Rules.

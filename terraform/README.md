@@ -22,6 +22,8 @@ Rules:
 
 - Use directory-based environment separation.
 - Do not use Terraform CLI workspaces.
+- Use `templates/terraform-root-module/` when creating a new root module.
+- Use `templates/terraform-child-module/` when creating a new project child module.
 - Keep child modules flat.
 - Place connection resources in root modules.
 - Use `connectivity.tf` for Security Group Rules.

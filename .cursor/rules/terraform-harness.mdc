@@ -23,6 +23,8 @@ This repository defines a Terraform AI Harness.
 
 - Keep modules flat.
 - Do not call project child modules from other project child modules.
+- Use `templates/terraform-root-module/` when creating a new root module.
+- Use `templates/terraform-child-module/` when creating a new project child module.
 - Root modules must compose child modules.
 - Child modules own component resources.
 - Root modules own connection resources.

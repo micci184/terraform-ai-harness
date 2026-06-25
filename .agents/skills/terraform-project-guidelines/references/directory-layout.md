@@ -33,3 +33,5 @@ terraform/
 - Do not use Terraform CLI workspaces.
 - Keep examples separate from real implementation.
 - Keep templates separate from real implementation.
+- Use `templates/terraform-root-module/` when creating a new root module.
+- Use `templates/terraform-child-module/` when creating a new project child module.
